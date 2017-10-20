@@ -50,6 +50,9 @@ main {
     left: -2px;
     background-color: #8b8b8b;
     cursor: pointer;
+    line-height: 56px;
+    color: #fff100;
+    font-size: 50px;
 }
 
 .inner .uncover{
@@ -57,4 +60,29 @@ main {
 }
 .inner .cover:active{
     background-color: #5f5750;
+}
+.star {
+    position: fixed;
+    top: -40px;
+    left: 0;
+    color: #00696a;
+    line-height: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    animation: fuck 10s linear infinite;
+}
+
+@keyframes fuck {
+    0% {
+        top: -40px;
+        transform: rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+        top: 660px;
+        transform: rotateY(3600deg) rotateZ(360deg);
+    }
+
 }
